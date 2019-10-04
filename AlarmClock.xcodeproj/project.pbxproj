@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF723472F3100DC6026 /* AppDelegate.swift */; };
+		59751FFA23472F3100DC6026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF923472F3100DC6026 /* ViewController.swift */; };
+		59751FFD23472F3100DC6026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFB23472F3100DC6026 /* Main.storyboard */; };
+		59751FFF23472F3300DC6026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFE23472F3300DC6026 /* Assets.xcassets */; };
+		5975200223472F3300DC6026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5975200023472F3300DC6026 /* LaunchScreen.storyboard */; };
+		5975200D23472F3300DC6026 /* AlarmClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975200C23472F3300DC6026 /* AlarmClockTests.swift */; };
+		5975201823472F3300DC6026 /* AlarmClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975201723472F3300DC6026 /* AlarmClockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5975200923472F3300DC6026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59751FEC23472F3100DC6026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59751FF323472F3100DC6026;
+			remoteInfo = AlarmClock;
+		};
+		5975201423472F3300DC6026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59751FEC23472F3100DC6026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59751FF323472F3100DC6026;
+			remoteInfo = AlarmClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59751FF423472F3100DC6026 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59751FF723472F3100DC6026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59751FF923472F3100DC6026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59751FFC23472F3100DC6026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59751FFE23472F3300DC6026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5975200123472F3300DC6026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5975200323472F3300DC6026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5975200823472F3300DC6026 /* AlarmClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5975200C23472F3300DC6026 /* AlarmClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockTests.swift; sourceTree = "<group>"; };
+		5975200E23472F3300DC6026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5975201323472F3300DC6026 /* AlarmClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5975201723472F3300DC6026 /* AlarmClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockUITests.swift; sourceTree = "<group>"; };
+		5975201923472F3300DC6026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59751FF123472F3100DC6026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975200523472F3300DC6026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975201023472F3300DC6026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59751FEB23472F3100DC6026 = {
+			isa = PBXGroup;
+			children = (
+				59751FF623472F3100DC6026 /* AlarmClock */,
+				5975200B23472F3300DC6026 /* AlarmClockTests */,
+				5975201623472F3300DC6026 /* AlarmClockUITests */,
+				59751FF523472F3100DC6026 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59751FF523472F3100DC6026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59751FF423472F3100DC6026 /* AlarmClock.app */,
+				5975200823472F3300DC6026 /* AlarmClockTests.xctest */,
+				5975201323472F3300DC6026 /* AlarmClockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59751FF623472F3100DC6026 /* AlarmClock */ = {
+			isa = PBXGroup;
+			children = (
+				59751FF723472F3100DC6026 /* AppDelegate.swift */,
+				59751FF923472F3100DC6026 /* ViewController.swift */,
+				59751FFB23472F3100DC6026 /* Main.storyboard */,
+				59751FFE23472F3300DC6026 /* Assets.xcassets */,
+				5975200023472F3300DC6026 /* LaunchScreen.storyboard */,
+				5975200323472F3300DC6026 /* Info.plist */,
+			);
+			path = AlarmClock;
+			sourceTree = "<group>";
+		};
+		5975200B23472F3300DC6026 /* AlarmClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				5975200C23472F3300DC6026 /* AlarmClockTests.swift */,
+				5975200E23472F3300DC6026 /* Info.plist */,
+			);
+			path = AlarmClockTests;
+			sourceTree = "<group>";
+		};
+		5975201623472F3300DC6026 /* AlarmClockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5975201723472F3300DC6026 /* AlarmClockUITests.swift */,
+				5975201923472F3300DC6026 /* Info.plist */,
+			);
+			path = AlarmClockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59751FF323472F3100DC6026 /* AlarmClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5975201C23472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClock" */;
+			buildPhases = (
+				59751FF023472F3100DC6026 /* Sources */,
+				59751FF123472F3100DC6026 /* Frameworks */,
+				59751FF223472F3100DC6026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlarmClock;
+			productName = AlarmClock;
+			productReference = 59751FF423472F3100DC6026 /* AlarmClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5975200723472F3300DC6026 /* AlarmClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5975201F23472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClockTests" */;
+			buildPhases = (
+				5975200423472F3300DC6026 /* Sources */,
+				5975200523472F3300DC6026 /* Frameworks */,
+				5975200623472F3300DC6026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5975200A23472F3300DC6026 /* PBXTargetDependency */,
+			);
+			name = AlarmClockTests;
+			productName = AlarmClockTests;
+			productReference = 5975200823472F3300DC6026 /* AlarmClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5975201223472F3300DC6026 /* AlarmClockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5975202223472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClockUITests" */;
+			buildPhases = (
+				5975200F23472F3300DC6026 /* Sources */,
+				5975201023472F3300DC6026 /* Frameworks */,
+				5975201123472F3300DC6026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5975201523472F3300DC6026 /* PBXTargetDependency */,
+			);
+			name = AlarmClockUITests;
+			productName = AlarmClockUITests;
+			productReference = 5975201323472F3300DC6026 /* AlarmClockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59751FEC23472F3100DC6026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "笠原未来";
+				TargetAttributes = {
+					59751FF323472F3100DC6026 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5975200723472F3300DC6026 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 59751FF323472F3100DC6026;
+					};
+					5975201223472F3300DC6026 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 59751FF323472F3100DC6026;
+					};
+				};
+			};
+			buildConfigurationList = 59751FEF23472F3100DC6026 /* Build configuration list for PBXProject "AlarmClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59751FEB23472F3100DC6026;
+			productRefGroup = 59751FF523472F3100DC6026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59751FF323472F3100DC6026 /* AlarmClock */,
+				5975200723472F3300DC6026 /* AlarmClockTests */,
+				5975201223472F3300DC6026 /* AlarmClockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59751FF223472F3100DC6026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5975200223472F3300DC6026 /* LaunchScreen.storyboard in Resources */,
+				59751FFF23472F3300DC6026 /* Assets.xcassets in Resources */,
+				59751FFD23472F3100DC6026 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975200623472F3300DC6026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975201123472F3300DC6026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59751FF023472F3100DC6026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59751FFA23472F3100DC6026 /* ViewController.swift in Sources */,
+				59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975200423472F3300DC6026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5975200D23472F3300DC6026 /* AlarmClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5975200F23472F3300DC6026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5975201823472F3300DC6026 /* AlarmClockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5975200A23472F3300DC6026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59751FF323472F3100DC6026 /* AlarmClock */;
+			targetProxy = 5975200923472F3300DC6026 /* PBXContainerItemProxy */;
+		};
+		5975201523472F3300DC6026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59751FF323472F3100DC6026 /* AlarmClock */;
+			targetProxy = 5975201423472F3300DC6026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59751FFB23472F3100DC6026 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59751FFC23472F3100DC6026 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5975200023472F3300DC6026 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5975200123472F3300DC6026 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5975201A23472F3300DC6026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5975201B23472F3300DC6026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5975201D23472F3300DC6026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5975201E23472F3300DC6026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5975202023472F3300DC6026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmClock.app/AlarmClock";
+			};
+			name = Debug;
+		};
+		5975202123472F3300DC6026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlarmClock.app/AlarmClock";
+			};
+			name = Release;
+		};
+		5975202323472F3300DC6026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlarmClock;
+			};
+			name = Debug;
+		};
+		5975202423472F3300DC6026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQ44R4777H;
+				INFOPLIST_FILE = AlarmClockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mikukasahara.AlarmClockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlarmClock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59751FEF23472F3100DC6026 /* Build configuration list for PBXProject "AlarmClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5975201A23472F3300DC6026 /* Debug */,
+				5975201B23472F3300DC6026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5975201C23472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5975201D23472F3300DC6026 /* Debug */,
+				5975201E23472F3300DC6026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5975201F23472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5975202023472F3300DC6026 /* Debug */,
+				5975202123472F3300DC6026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5975202223472F3300DC6026 /* Build configuration list for PBXNativeTarget "AlarmClockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5975202323472F3300DC6026 /* Debug */,
+				5975202423472F3300DC6026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59751FEC23472F3100DC6026 /* Project object */;
+}

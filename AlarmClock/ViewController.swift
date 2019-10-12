@@ -7,14 +7,29 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    var alarmListVC = AlarmListViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timeLabel.text = alarmListVC.timeArray[0]
+        
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func toList() {
+        performSegue(withIdentifier: "toList", sender: nil)
+    }
+    
+    @IBAction func sleep() {
+        
+    }
 
 }
 

@@ -26,9 +26,12 @@ class AwakeViewController: UIViewController {
     @IBAction func stop() {
         if alarm.sleepTimer == nil {
             alarm.stopTimer()
-            listVC.table.allowsSelection = true
+            listVC.isAwake = true
             dismiss(animated: true, completion: nil)
         }else{
+            listVC.isAwake = true
+            alarm.sleepTimer?.invalidate()
+            alarm.sleepTimer = nil
             dismiss(animated: true, completion: nil)
         }
     }

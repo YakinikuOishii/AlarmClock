@@ -23,7 +23,7 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
 //    let alarm = Alarm()
     var alarm = Alarm()
     
-    var sleepBool = false
+    var isAwake:Bool = true
     
     let rgb = UIColor(red: 0.074, green: 0.098, blue:0.200, alpha: 1.000)
     let gray = UIColor(red: 0.172, green: 0.168, blue:0.200, alpha: 0.700)
@@ -46,7 +46,6 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
             timeArray[index] = stringFromDate(date: setTime, format: "HH:mm")
         }
         print(timeArray)
-        print(table.allowsSelection)
         table.reloadData()
     }
     
@@ -69,10 +68,12 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         cell!.dayLabel.text = dayArray[indexPath.row] 
         cell?.timeLabel.text = timeArray[indexPath.row]
         
-        if table.allowsSelection == false {
+        if isAwake == false {
+            table.allowsSelection = false
             cell?.dayLabel.textColor = .gray
             cell?.timeLabel.textColor = .gray
-        }else if table.allowsSelection == true {
+        }else if isAwake == true {
+            table.allowsSelection = true
             cell?.dayLabel.textColor = .white
             cell?.timeLabel.textColor = .white
         }

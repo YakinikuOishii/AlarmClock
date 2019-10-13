@@ -57,8 +57,8 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEW-dQ-J4Q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <color key="backgroundColor" red="0.1633011757" green="0.15790224529999999" blue="0.35651967010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="barTintColor" red="0.1633011757" green="0.15790224529999999" blue="0.35651967010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.16470588235294117" green="0.15686274509803921" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.074509803920000006" green="0.098039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Title" id="PJX-ZO-hdO">
                                         <barButtonItem key="leftBarButtonItem" title="キャンセル" id="G5K-Ts-gz8">
@@ -76,9 +76,10 @@
                             </navigationBar>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Nwm-C8-6uf">
                                 <rect key="frame" x="0.0" y="44" width="375" height="216"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" red="0.27569125010000001" green="0.26560959449999999" blue="0.58634653020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.074509803921568626" green="0.098039215686274508" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Nwm-C8-6uf" firstAttribute="trailing" secondItem="UiM-YD-e7Q" secondAttribute="trailing" id="CXD-Pr-zJd"/>
                             <constraint firstItem="Nwm-C8-6uf" firstAttribute="top" secondItem="MEW-dQ-J4Q" secondAttribute="bottom" id="OOA-8y-IAk"/>
@@ -111,7 +112,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="385" id="6Vb-qm-yjz"/>
                                 </constraints>
-                                <color key="sectionIndexBackgroundColor" red="0.27569125010000001" green="0.26560959449999999" blue="0.58634653020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" red="0.074509803921568626" green="0.098039215686274508" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="hT6-E7-3f2" customClass="AlarmTableViewCell" customModule="AlarmClock" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -120,12 +121,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.27450980392156865" green="0.26666666666666666" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.074509803921568626" green="0.098039215686274508" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abw-y2-aeD">
-                                <rect key="frame" x="146" y="459" width="82" height="79"/>
+                                <rect key="frame" x="146" y="494" width="82" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="寝る">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
@@ -142,7 +143,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.27569125010000001" green="0.26560959449999999" blue="0.58634653020000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.074509803921568626" green="0.098039215686274508" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="WlD-BU-ff8" firstAttribute="leading" secondItem="XWk-r1-sYg" secondAttribute="leading" id="1P0-1C-Ke5"/>
                             <constraint firstItem="d8w-uF-ppu" firstAttribute="trailing" secondItem="XWk-r1-sYg" secondAttribute="trailing" id="9Pj-q9-FHi"/>

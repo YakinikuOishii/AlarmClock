@@ -33,6 +33,7 @@ class AlarmSettingViewController: UIViewController {
     }
     
     @IBAction func save() {
+        print(datePicker.date)
         //AlarmにあるselectedWakeUpTimeにユーザーの入力した日付を代入
         alarm.selectedWakeUpTime = datePicker.date
 //        //AlarmのrunTimerを呼ぶ

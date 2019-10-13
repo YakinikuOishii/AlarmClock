@@ -10,10 +10,10 @@
 		590A11ED23529AB9003E97D3 /* Chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590A11EC23529AB9003E97D3 /* Chevron@3x.png */; };
 		590A11EF2352C507003E97D3 /* AwakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11EE2352C507003E97D3 /* AwakeViewController.swift */; };
 		590A11F12352C814003E97D3 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11F02352C814003E97D3 /* CurrentTime.swift */; };
+		590A12142352D470003E97D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590A12132352D470003E97D3 /* Assets.xcassets */; };
 		59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF723472F3100DC6026 /* AppDelegate.swift */; };
 		59751FFA23472F3100DC6026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF923472F3100DC6026 /* ViewController.swift */; };
 		59751FFD23472F3100DC6026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFB23472F3100DC6026 /* Main.storyboard */; };
-		59751FFF23472F3300DC6026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFE23472F3300DC6026 /* Assets.xcassets */; };
 		5975200223472F3300DC6026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5975200023472F3300DC6026 /* LaunchScreen.storyboard */; };
 		5975200D23472F3300DC6026 /* AlarmClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975200C23472F3300DC6026 /* AlarmClockTests.swift */; };
 		5975201823472F3300DC6026 /* AlarmClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975201723472F3300DC6026 /* AlarmClockUITests.swift */; };
@@ -46,11 +46,11 @@
 		590A11EC23529AB9003E97D3 /* Chevron@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@3x.png"; sourceTree = "<group>"; };
 		590A11EE2352C507003E97D3 /* AwakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwakeViewController.swift; sourceTree = "<group>"; };
 		590A11F02352C814003E97D3 /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
+		590A12132352D470003E97D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 		59751FF423472F3100DC6026 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59751FF723472F3100DC6026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59751FF923472F3100DC6026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59751FFC23472F3100DC6026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		59751FFE23472F3300DC6026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5975200123472F3300DC6026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5975200323472F3300DC6026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5975200823472F3300DC6026 /* AlarmClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,12 +115,12 @@
 		59751FF623472F3100DC6026 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				590A12132352D470003E97D3 /* Assets.xcassets */,
 				590A11EC23529AB9003E97D3 /* Chevron@3x.png */,
 				59FC75B12350C55100D77F3F /* bird-and-bag.mp3 */,
 				59751FF723472F3100DC6026 /* AppDelegate.swift */,
 				59751FF923472F3100DC6026 /* ViewController.swift */,
 				59751FFB23472F3100DC6026 /* Main.storyboard */,
-				59751FFE23472F3300DC6026 /* Assets.xcassets */,
 				5975200023472F3300DC6026 /* LaunchScreen.storyboard */,
 				5975200323472F3300DC6026 /* Info.plist */,
 				5975202723473B7800DC6026 /* AlarmTableViewCell.swift */,
@@ -257,9 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5975200223472F3300DC6026 /* LaunchScreen.storyboard in Resources */,
-				59751FFF23472F3300DC6026 /* Assets.xcassets in Resources */,
 				59751FFD23472F3100DC6026 /* Main.storyboard in Resources */,
 				590A11ED23529AB9003E97D3 /* Chevron@3x.png in Resources */,
+				590A12142352D470003E97D3 /* Assets.xcassets in Resources */,
 				59FC75B22350C55100D77F3F /* bird-and-bag.mp3 in Resources */,
 				5975202A23473B7800DC6026 /* AlarmTableViewCell.xib in Resources */,
 			);
@@ -470,12 +470,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.AlarmClockMK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L4S6-HaramiKasahara-Distribution";
@@ -490,12 +492,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 2K446D59RQ;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.lifeistech.AlarmClockMK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L4S6-HaramiKasahara-Distribution";

@@ -22,14 +22,16 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     let alarm = Alarm()
     
-    let rgb = UIColor(red: 0.274, green: 0.266, blue: 0.588, alpha: 1.0)
+    var sleepBool = false
+    
+    let rgb = UIColor(red: 0.074, green: 0.098, blue:0.200, alpha: 1.000)
+    let gray = UIColor(red: 0.172, green: 0.168, blue:0.200, alpha: 0.700)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
 //        return formatter.string(from: date)
-        
         table.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         navigationBar.barTintColor = rgb
@@ -50,7 +52,7 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     @IBAction func sleep() {
         table.allowsSelection = false
-         print(alarm.selectedWakeUpTime)
+        print(alarm.selectedWakeUpTime)
         alarm.runTimer()
         table.reloadData()
         performSegue(withIdentifier: "toAlarm", sender: nil)
@@ -70,8 +72,8 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
             cell?.dayLabel.textColor = .gray
             cell?.timeLabel.textColor = .gray
         }else if table.allowsSelection == true {
-            cell?.dayLabel.textColor = .black
-            cell?.timeLabel.textColor = .black
+            cell?.dayLabel.textColor = .white
+            cell?.timeLabel.textColor = .white
         }
         return cell!
     }

@@ -10,7 +10,7 @@
 		590A11ED23529AB9003E97D3 /* Chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590A11EC23529AB9003E97D3 /* Chevron@3x.png */; };
 		590A11EF2352C507003E97D3 /* AwakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11EE2352C507003E97D3 /* AwakeViewController.swift */; };
 		590A11F12352C814003E97D3 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11F02352C814003E97D3 /* CurrentTime.swift */; };
-		590A12142352D470003E97D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590A12132352D470003E97D3 /* Assets.xcassets */; };
+		590A1216235329EF003E97D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590A1215235329EF003E97D3 /* Assets.xcassets */; };
 		59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF723472F3100DC6026 /* AppDelegate.swift */; };
 		59751FFA23472F3100DC6026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF923472F3100DC6026 /* ViewController.swift */; };
 		59751FFD23472F3100DC6026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFB23472F3100DC6026 /* Main.storyboard */; };
@@ -46,7 +46,7 @@
 		590A11EC23529AB9003E97D3 /* Chevron@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@3x.png"; sourceTree = "<group>"; };
 		590A11EE2352C507003E97D3 /* AwakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwakeViewController.swift; sourceTree = "<group>"; };
 		590A11F02352C814003E97D3 /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
-		590A12132352D470003E97D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
+		590A1215235329EF003E97D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59751FF423472F3100DC6026 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59751FF723472F3100DC6026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59751FF923472F3100DC6026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		59751FF623472F3100DC6026 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
-				590A12132352D470003E97D3 /* Assets.xcassets */,
+				590A1215235329EF003E97D3 /* Assets.xcassets */,
 				590A11EC23529AB9003E97D3 /* Chevron@3x.png */,
 				59FC75B12350C55100D77F3F /* bird-and-bag.mp3 */,
 				59751FF723472F3100DC6026 /* AppDelegate.swift */,
@@ -127,8 +127,8 @@
 				5975202823473B7800DC6026 /* AlarmTableViewCell.xib */,
 				5975202B23473D9000DC6026 /* AlarmSettingViewController.swift */,
 				5975202D23487E6700DC6026 /* AlarmListViewController.swift */,
-				59752030234A3B9900DC6026 /* Alarm.swift */,
 				590A11EE2352C507003E97D3 /* AwakeViewController.swift */,
+				59752030234A3B9900DC6026 /* Alarm.swift */,
 				590A11F02352C814003E97D3 /* CurrentTime.swift */,
 			);
 			path = AlarmClock;
@@ -259,7 +259,7 @@
 				5975200223472F3300DC6026 /* LaunchScreen.storyboard in Resources */,
 				59751FFD23472F3100DC6026 /* Main.storyboard in Resources */,
 				590A11ED23529AB9003E97D3 /* Chevron@3x.png in Resources */,
-				590A12142352D470003E97D3 /* Assets.xcassets in Resources */,
+				590A1216235329EF003E97D3 /* Assets.xcassets in Resources */,
 				59FC75B22350C55100D77F3F /* bird-and-bag.mp3 in Resources */,
 				5975202A23473B7800DC6026 /* AlarmTableViewCell.xib in Resources */,
 			);
@@ -482,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L4S6-HaramiKasahara-Distribution";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -504,7 +504,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "L4S6-HaramiKasahara-Distribution";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

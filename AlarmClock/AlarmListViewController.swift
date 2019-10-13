@@ -27,6 +27,8 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     let rgb = UIColor(red: 0.074, green: 0.098, blue:0.200, alpha: 1.000)
     let gray = UIColor(red: 0.172, green: 0.168, blue:0.200, alpha: 0.700)
+    
+    let saveData: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,16 +47,26 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         }else{
             timeArray[index] = stringFromDate(date: setTime, format: "HH:mm")
         }
+        
+        saveData.removeObject(forKey: "key")
+        saveData.set(timeArray,forKey:"key")
+        
+        for i in 0...6 {
+            let array: [String] = saveData.object(forKey:"key") as! [String]
+            timeArray[i] = array[i]
+        }
+        
+        
         print(timeArray)
         table.reloadData()
     }
     
     @IBAction func sleep() {
-        table.allowsSelection = false
+//        table.allowsSelection = false
 //        alarm.selectedWakeUpTime = setTime
 //        print(alarm.selectedWakeUpTime)
         alarm.runTimer()
-        table.reloadData()
+//        table.reloadData()
         performSegue(withIdentifier: "toAlarm", sender: nil)
     }
     

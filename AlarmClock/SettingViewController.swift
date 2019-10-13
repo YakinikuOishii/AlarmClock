@@ -12,15 +12,26 @@ class SettingViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
     
     @IBOutlet var alarmDatePicker: UIDatePicker!
     @IBOutlet var sleepTimePicker: UIPickerView!
+    @IBOutlet var navigationBar: UINavigationBar!
+    @IBOutlet var saveButton: UIBarButtonItem!
+    @IBOutlet var cancelButton: UIBarButtonItem!
 
+    let rgb = UIColor(red: 0.074, green: 0.098, blue:0.200, alpha: 1.000)
+    let tintColor = UIColor(red: 0.949, green: 0.949, blue:0.949, alpha: 1.000)
+    
     var alarm = Alarm()
     
     let dataList:[Any] = [[Int](0...24),[String](arrayLiteral: ":"), [Int](0...60)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationBar.barTintColor = rgb
+        alarmDatePicker.tintColor = tintColor
+        saveButton.tintColor = tintColor
+        cancelButton.tintColor = tintColor
         
         alarmDatePicker.datePickerMode = UIDatePicker.Mode.time
+        alarmDatePicker.setValue(tintColor, forKey: "textColor")
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +68,6 @@ class SettingViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
                 return 100
         }
     }
-    
     
     
 

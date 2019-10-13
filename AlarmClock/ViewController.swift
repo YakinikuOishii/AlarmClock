@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     
+    
     var alarm = Alarm()
     var setTime: Date!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     

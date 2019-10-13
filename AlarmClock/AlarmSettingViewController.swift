@@ -14,7 +14,7 @@ class AlarmSettingViewController: UIViewController {
     
     var alarmListVC = AlarmListViewController()
     
-    let alarm = Alarm()
+    var alarm = Alarm()
 
     @IBOutlet var datePicker: UIDatePicker!
 

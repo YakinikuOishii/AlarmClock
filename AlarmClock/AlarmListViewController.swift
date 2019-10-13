@@ -20,7 +20,8 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     var dayArray: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     var timeArray: [String] = ["7:00","6:00","6:00","6:00","6:00","6:00","6:00"]
     
-    let alarm = Alarm()
+//    let alarm = Alarm()
+    var alarm = Alarm()
     
     var sleepBool = false
     
@@ -35,8 +36,6 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         table.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         navigationBar.barTintColor = rgb
-        
-
         // Do any additional setup after loading the view.
     }
     
@@ -47,12 +46,14 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
             timeArray[index] = stringFromDate(date: setTime, format: "HH:mm")
         }
         print(timeArray)
+        print(table.allowsSelection)
         table.reloadData()
     }
     
     @IBAction func sleep() {
         table.allowsSelection = false
-        print(alarm.selectedWakeUpTime)
+//        alarm.selectedWakeUpTime = setTime
+//        print(alarm.selectedWakeUpTime)
         alarm.runTimer()
         table.reloadData()
         performSegue(withIdentifier: "toAlarm", sender: nil)
@@ -95,6 +96,11 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         if segue.identifier == "toSetting" {
             let nextVC = segue.destination as! AlarmSettingViewController
             nextVC.index = index
+            nextVC.alarm = alarm
+        }
+        if segue.identifier == "toAlarm" {
+            let nextVC = segue.destination as! AwakeViewController
+            nextVC.alarm = alarm
         }
     }
     

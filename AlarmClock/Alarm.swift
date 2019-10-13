@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class Alarm{
-    var selectedWakeUpTime:Date?
+    var selectedWakeUpTime:Date? = Date()
     var audioPlayer: AVAudioPlayer!
     var sleepTimer: Timer?
     var seconds = 0
@@ -52,6 +52,7 @@ class Alarm{
             }
             //再生
             audioPlayer.play()
+            print("play")
         }
     }
     

@@ -39,7 +39,9 @@ class AlarmSettingViewController: UIViewController {
 //        alarm.runTimer()
         
         alarmListVC.index = index
-        
+        let beforeVC = self.presentingViewController as! AlarmListViewController
+        beforeVC.setTime = datePicker.date
+        beforeVC.index = self.index
         
         dismiss(animated: true, completion: nil)
     }
@@ -48,13 +50,12 @@ class AlarmSettingViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toList" {
-            let nextVC = segue.destination as! AlarmListViewController
-            nextVC.setTime = datePicker.date
-            nextVC.index = self.index
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "toList" {
+//            print("呼ばれた")
+//
+//        }
+//    }
     
     /*
     // MARK: - Navigation

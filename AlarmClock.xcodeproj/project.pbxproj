@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		590A11ED23529AB9003E97D3 /* Chevron@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 590A11EC23529AB9003E97D3 /* Chevron@3x.png */; };
+		590A11EF2352C507003E97D3 /* AwakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11EE2352C507003E97D3 /* AwakeViewController.swift */; };
+		590A11F12352C814003E97D3 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590A11F02352C814003E97D3 /* CurrentTime.swift */; };
 		59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF723472F3100DC6026 /* AppDelegate.swift */; };
 		59751FFA23472F3100DC6026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59751FF923472F3100DC6026 /* ViewController.swift */; };
 		59751FFD23472F3100DC6026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59751FFB23472F3100DC6026 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		590A11EC23529AB9003E97D3 /* Chevron@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chevron@3x.png"; sourceTree = "<group>"; };
+		590A11EE2352C507003E97D3 /* AwakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwakeViewController.swift; sourceTree = "<group>"; };
+		590A11F02352C814003E97D3 /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		59751FF423472F3100DC6026 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59751FF723472F3100DC6026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59751FF923472F3100DC6026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				5975202B23473D9000DC6026 /* AlarmSettingViewController.swift */,
 				5975202D23487E6700DC6026 /* AlarmListViewController.swift */,
 				59752030234A3B9900DC6026 /* Alarm.swift */,
+				590A11EE2352C507003E97D3 /* AwakeViewController.swift */,
+				590A11F02352C814003E97D3 /* CurrentTime.swift */,
 			);
 			path = AlarmClock;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 				59751FF823472F3100DC6026 /* AppDelegate.swift in Sources */,
 				5975202C23473D9000DC6026 /* AlarmSettingViewController.swift in Sources */,
 				5975202923473B7800DC6026 /* AlarmTableViewCell.swift in Sources */,
+				590A11EF2352C507003E97D3 /* AwakeViewController.swift in Sources */,
+				590A11F12352C814003E97D3 /* CurrentTime.swift in Sources */,
 				59752031234A3B9900DC6026 /* Alarm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

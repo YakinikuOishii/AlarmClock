@@ -30,22 +30,29 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         table.dataSource = self
 //        return formatter.string(from: date)
         
-        if setTime != nil {
-            
-        }else{
-            
-        }
-        
         table.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         navigationBar.barTintColor = rgb
+        
 
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if setTime == nil {
+            alarm.selectedWakeUpTime = dateFromString(string: "6:00", format: "HH:mm")
+        }else{
+            timeArray[index] = stringFromDate(date: setTime, format: "HH:mm")
+        }
+        print(timeArray)
+        table.reloadData()
+    }
+    
     @IBAction func sleep() {
         table.allowsSelection = false
+         print(alarm.selectedWakeUpTime)
         alarm.runTimer()
+        table.reloadData()
         performSegue(withIdentifier: "toAlarm", sender: nil)
     }
     
@@ -58,6 +65,14 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
 //        cell!.dayLabel.text = dayArray[indexPath.row]
         cell!.dayLabel.text = dayArray[indexPath.row] 
         cell?.timeLabel.text = timeArray[indexPath.row]
+        
+        if table.allowsSelection == false {
+            cell?.dayLabel.textColor = .gray
+            cell?.timeLabel.textColor = .gray
+        }else if table.allowsSelection == true {
+            cell?.dayLabel.textColor = .black
+            cell?.timeLabel.textColor = .black
+        }
         return cell!
     }
     

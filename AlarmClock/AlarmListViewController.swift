@@ -11,6 +11,7 @@ import UIKit
 class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
+    @IBOutlet var navigationBar:UINavigationBar!
     
     var index: Int!
     
@@ -18,6 +19,10 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     var dayArray: [String] = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     var timeArray: [String] = ["7:00","6:00","6:00","6:00","6:00","6:00","6:00"]
+    
+    let alarm = Alarm()
+    
+    let rgb = UIColor(red: 0.274, green: 0.266, blue: 0.588, alpha: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +37,16 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
         
         table.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
+        
+        navigationBar.barTintColor = rgb
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func sleep() {
+        table.allowsSelection = false
+        alarm.runTimer()
+        performSegue(withIdentifier: "toAlarm", sender: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,7 +62,11 @@ class AlarmListViewController: UIViewController,UITableViewDelegate,UITableViewD
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 55
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.contentView.backgroundColor = rgb
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
